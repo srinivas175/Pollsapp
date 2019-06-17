@@ -21,11 +21,20 @@ django-admin startproject pollsapp
 ```
 ## polls
 custom app that handles the core logic of the project.
-> **Models**
-  - Question - Stores the questions
-  - Choice - Stores the choices for the respective
+> Features
+- Shows the Polls questions, respective choices
+- Submitting votes
+- Displaying the votes
 
-To create polls or any custom app:
+> To create polls or any custom app:
 ```python
 django-admin startapp <appname>
 ```
+> **Models**
+  - Question - Stores the questions
+  - Choice - Stores the choices for the respective question and track the votes
+
+## Dashboard
+handles the home page of Polls App
+
+
