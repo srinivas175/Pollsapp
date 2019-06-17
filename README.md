@@ -9,7 +9,7 @@ A simple demo project to undersatnd the basics of the Django Framework. It deals
 - **For Django**
 > pip install django
 ## Apps
-- **pollsapp**
+- **[pollsapp](https://github.com/srinivas175/pollsapp/blob/master/README.md#pollsapp-1)**
 - **dashboard**
 - **polls**
 ## pollsapp
