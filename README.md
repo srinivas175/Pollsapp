@@ -13,9 +13,19 @@ A simple demo project to undersatnd the basics of the Django Framework. It deals
 - **dashboard**
 - **polls**
 ## pollsapp
-The in-built app created during the project creation. Contains important files like **settings.py** and **urls.py** 
+The default app created during the project creation. Contains important files like **settings.py** and **urls.py** 
 
 To create pollsapp:
 ```python
 django-admin startproject pollsapp
+```
+## polls
+custom app that handles the core logic of the project.
+> **Models**
+  - Question - Stores the questions
+  - Choice - Stores the choices for the respective
+
+To create polls or any custom app:
+```python
+django-admin startapp <appname>
 ```
