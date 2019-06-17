@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
-from .models import Question,Choice
+from django.urls import reverse
+
+from .models import Question, Choice
 
 
 def questions(request):
@@ -11,23 +13,31 @@ def questions(request):
 
 def detail(request, question_id):
     q = Question.objects.get(pk=question_id)
-    c = Choice.objects.get(question=q)
+    c = Choice.objects.filter(question=q)
     return render(request, 'polls/detail.html', {'ques': q, 'opt': c})
 
+
 def vote(request, question_id):
-    question = (Question, pk=question_id)
+    question = Question.objects.get(pk=question_id)
     try:
-        selected_choice = question.choice_set.get(pk=request.POST['choice'])
+        selected_choice = Choice.objects.get(question=question, pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Redisplay the question voting form.
         return render(request, 'polls/detail.html', {
-            'question': question,
+            'ques': question,
             'error_message': "You didn't select a choice.",
         })
     else:
+        print(selected_choice)
         selected_choice.votes += 1
         selected_choice.save()
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
-        return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+        return redirect(reverse('polls:results', args=(question.id,)))
+
+
+def results(request, question_id):
+    q = Question.objects.get(pk=question_id)
+    c = Choice.objects.filter(question=q)
+    return render(request, 'polls/results.html', {'question': q, 'choices': c})

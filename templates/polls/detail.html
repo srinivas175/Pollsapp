@@ -11,9 +11,9 @@
     <strong>{{ error_message }}</strong></p>
 {% endif %}
 
-<form action="{% url 'polls:vote' question.id %}" method="post">
+<form action="{% url 'polls:vote' ques.id %}" method="post">
 {% csrf_token %}
-{% for choice in c %}
+{% for choice in opt %}
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
 {% endfor %}
