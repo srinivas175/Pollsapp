@@ -36,6 +36,7 @@ django-admin startapp <appname>
 
 ## dashboard
 > **This is not Required**
+
 app that handles the home page of Polls App 
 
 
