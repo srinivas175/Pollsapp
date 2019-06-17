@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poll Questions</title>
+</head>
+<body>
+<h1>POLL QUESTIONS</h1>
+{% if ques %}
+    <ul>
+    {% for question in ques %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</body>
+</html>
