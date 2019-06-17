@@ -10,8 +10,8 @@ A simple demo project to undersatnd the basics of the Django Framework. It deals
 > pip install django
 ## Apps
 - **[pollsapp](https://github.com/srinivas175/pollsapp/blob/master/README.md#pollsapp-1)**
-- **[dashboard]**
-- **[polls]**
+- **[dashboard](https://github.com/srinivas175/pollsapp/blob/master/README.md#dashboard)**
+- **[polls](https://github.com/srinivas175/pollsapp/blob/master/README.md#polls)**
 ## pollsapp
 The default app created during the project creation. Contains important files like **settings.py** and **urls.py** 
 
