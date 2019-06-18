@@ -16,7 +16,7 @@ unzip master.zip
 rm master.zip
 cd pollsapp
 ```
-> **Note: In case of error saying 'wget' not recognized, follow [this link](https://builtvisible.com/download-your-website-with-wget/) for installation and usage of wget**
+**Note: In case of error saying 'wget' not recognized, follow [this link](https://builtvisible.com/download-your-website-with-wget/) for installation and usage of wget**
 2. Install all the necessary packages
 3. Setup the Virtual Environment
 4. Run the following commands in the Terminal of the project folder
