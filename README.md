@@ -20,14 +20,14 @@ cd pollsapp
 2. Install all the necessary packages
 3. Setup the Virtual Environment
 4. Run the following commands in the Terminal of the project folder
->```python manage.py makemigrations```
+```python manage.py makemigrations```
 
->```python manage.py migrate --run-syncdb```
+```python manage.py migrate --run-syncdb```
 
 5. Create a User account to login to the admin page using the following command
->```python manage.py createsuperuser```
+```python manage.py createsuperuser```
 6. The project is ready to run on the server. To run it on the server, use the command:
->```python manage.py runserver```
+```python manage.py runserver```
 
 ## Apps
 - **[pollsapp](https://github.com/srinivas175/pollsapp/blob/master/README.md#pollsapp-1)**
