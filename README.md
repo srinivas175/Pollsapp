@@ -15,6 +15,7 @@ A simple demo project to undersatnd the basics of the Django Framework. It deals
 3. Setup the Virtual Environment
 4. Run the following commands in the Terminal of the project folder
 >```python manage.py makemigrations```
+
 >```python manage.py migrate --run-syncdb```
 
 5. Create a User account to login to the admin page using the following command
