@@ -14,7 +14,8 @@ A simple demo project to undersatnd the basics of the Django Framework. It deals
 wget https://<span></span>github.com<span></span>/srinivas175<span></span>/pollsapp/archive/master.zip
 unzip master.zip
 rm master.zip
-cd pollsapp```
+cd pollsapp
+```
 2. Install all the necessary packages
 3. Setup the Virtual Environment
 4. Run the following commands in the Terminal of the project folder
