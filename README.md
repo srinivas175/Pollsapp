@@ -8,6 +8,9 @@ A simple demo project to undersatnd the basics of the Django Framework. It deals
 > This site helps in setting up the [Virtual Environment](https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/)
 - **For Django**
 > pip install django
+## Project Setup
+1. Download and unzip [this entire repository](https://github.com/srinivas175/pollsapp) from GitHub, either interactively, or by entering the following in your Terminal.
+> git clone https://github.com/srinivas175/pollsapp.git
 ## Apps
 - **[pollsapp](https://github.com/srinivas175/pollsapp/blob/master/README.md#pollsapp-1)**
 - **[dashboard](https://github.com/srinivas175/pollsapp/blob/master/README.md#dashboard)**
