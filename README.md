@@ -6,6 +6,7 @@ A simple demo project to undersatnd the basics of the Django Framework. It deals
 ## Installation
 - **Virtual Environment setup**
 > This site helps in setting up the [Virtual Environment](https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/)
+``` python -m venv <envname> ```
 - **For Django**
 > pip install django
 ## Project Setup
